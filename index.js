@@ -29,7 +29,7 @@ app.get('/tears/:id', (req, res)=>{
 
     item.id === teamID;
 
-    res.json(player)
+    res.json(player);
 
 })
 

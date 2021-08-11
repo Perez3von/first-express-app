@@ -1,5 +1,5 @@
  
-const team = [
+const data = [
 
 {   id:23,
     player: 'Michael Jordan'
@@ -18,4 +18,4 @@ const team = [
 
 ]
 
-module.exports = team;
+module.exports = data;
