@@ -22,18 +22,18 @@ app.get('/tears', (req, res) => {
 
 
 app.get('/tears/:id', (req, res)=>{
-    
+    console.log(req.params.id);
     const teamID = Number(req.params.id);
 
     const player =  data.find((item)=>{ 
-
+console.log('teamId', teamID);
+console.log('player', player);
     item.id === teamID;
 
     res.json(player);
 
 })
-console.log('teamId', teamID);
-console.log('player', player);
+
 
 })
 
