@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 const data = require('./data.js');
 
 app.get('/', (req, res) => {
-    res.send('hello world!!!!!!!!!')
+    res.send('hello world!!!!!!!!!');
 });
 
 
@@ -22,7 +22,7 @@ app.get('/tears', (req, res) => {
 
 
 app.get('/tears/:id', (req, res)=>{
-
+    
     const teamID = Number(req.params.id);
 
     const player =  data.find((item)=>{ 
@@ -32,14 +32,15 @@ app.get('/tears/:id', (req, res)=>{
     res.json(player);
 
 })
-
+console.log('teamId', teamID);
+console.log('player', player);
 
 })
 
 
 
 app.listen(port, () => {
-    console.log(`listieing at port ${port}`)
+    console.log(`listieing at port ${port}`);
 });
 
 
