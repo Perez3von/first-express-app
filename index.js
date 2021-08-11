@@ -15,27 +15,21 @@ app.get('/', (req, res) => {
 app.get('/tears', (req, res) => {
 
     res.json(data);
+   
 
     // res.send(`These are my tears from ${req.query.name}`);
 } )
 
 
-
-app.get('/tears/:id', (req, res)=>{
-    console.log(req.params.id);
+app.get('/tears/:id', (req, res) => {
+   
     const teamID = Number(req.params.id);
 
-    const player =  data.find((item)=>{ 
-console.log('teamId', teamID);
-console.log('player', player);
-    item.id === teamID;
+    const player =  data.find( (item) => (item.id === teamID) );
 
-    res.json(player);
+res.json(player);
+});
 
-})
-
-
-})
 
 
 
