@@ -27,7 +27,7 @@ app.get('/tears/:id', (req, res) => {
 
     const player =  data.find( (item) => (item.id === teamID) );
 
-res.json(player);
+    res.json(player);
 });
 
 
