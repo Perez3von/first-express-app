@@ -6,8 +6,6 @@ const request = supertest(app);
 const data = require('../data.js');
 
 
-
-
 it('gets the tears endpoint', async () => {
   const response = await request.get('/tears');
 
@@ -16,7 +14,7 @@ it('gets the tears endpoint', async () => {
 });
 
 it('gets the tears team endpoint', async () => {
-  const response = await request.get('/tears/8');
+  const response = await request.get('/tears/23');
 
   expect(response.status).toBe(200);
   expect(response.body).toEqual(data[0]);
